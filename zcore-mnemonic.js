@@ -3,7 +3,7 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
 
 var spec = {
   name: 'Mnemonic',
-  message: 'Internal Error on bitcore-mnemonic module {0}',
+  message: 'Internal Error on zcore-mnemonic module {0}',
   errors: [{
     name: 'InvalidEntropy',
     message: 'Entropy length must be an even multiple of 11 bits: {0}'
@@ -16,13 +16,13 @@ var spec = {
   }]
 };
 
-module.exports = require('bitcore-lib').errors.extend(spec);
+module.exports = require('zcore-lib').errors.extend(spec);
 
-},{"bitcore-lib":"bitcore-lib"}],2:[function(require,module,exports){
+},{"zcore-lib":"zcore-lib"}],2:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
-var bitcore = require('bitcore-lib');
+var bitcore = require('zcore-lib');
 var BN = bitcore.crypto.BN;
 var unorm = require('unorm');
 var _ = bitcore.deps._;
@@ -317,7 +317,7 @@ Mnemonic._entropyChecksum = function(entropy) {
 module.exports = Mnemonic;
 
 }).call(this,require("buffer").Buffer)
-},{"./errors":1,"./pbkdf2":3,"./words":7,"bitcore-lib":"bitcore-lib","buffer":12,"unorm":230}],3:[function(require,module,exports){
+},{"./errors":1,"./pbkdf2":3,"./words":7,"zcore-lib":"zcore-lib","buffer":12,"unorm":230}],3:[function(require,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -21281,7 +21281,7 @@ UChar.udata={
    }
 }(this));
 
-},{}],"bitcore-mnemonic":[function(require,module,exports){
+},{}],"zcore-mnemonic":[function(require,module,exports){
 module.exports = require('./lib/mnemonic');
 
 },{"./lib/mnemonic":2}]},{},[]);
